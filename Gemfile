@@ -29,7 +29,7 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 group :development, :test do
   gem 'better_errors', '< 2.10'
   gem 'binding_of_caller', '~> 1.0'
-  gem 'brakeman', '~> 5.2'
+  gem 'brakeman', '~> 5.4.1'
   gem 'bundler-audit', '~> 0.9.1'
   gem 'database_cleaner-active_record'
   gem 'database_consistency', '~> 1.1'
