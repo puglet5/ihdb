@@ -1,0 +1,45 @@
+inherit_from: .rubocop_todo.yml
+
+require:
+  - rubocop-performance
+  - rubocop-rails
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.0
+  SuggestExtensions: false
+
+Style/Documentation:
+  Enabled: false
+
+Layout/LineLength:
+  Enabled: false
+
+# Rails/FilePath:
+#   EnforcedStyle: arguments
+#   Enabled: false
+
+Rails/HasAndBelongsToMany:
+  Enabled: false
+
+Metrics:
+  Enabled: false
+
+# Lint/EmptyBlock:
+#   Enabled: false
+
+# Style/MultilineBlockChain:
+#   Enabled: false
+
+Naming:
+  Enabled: false
+
+# Rails/OutputSafety:
+#   Enabled: false
+
+Lint/MissingSuper:
+  Enabled: false
+
+Rails/I18nLocaleTexts:
+  Enabled: false
+

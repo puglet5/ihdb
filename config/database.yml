@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: <%= ENV['PGHOST'] %>
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  port: 5432
+
+development:
+  <<: *default
+  database: ihdb_development
+  username: <%= ENV['PGUSER'] %>
+  password: <%= ENV['PGPASSWORD'] %>
+
+test:
+  <<: *default
+  database: ihdb_test
+  username: <%= ENV['PGUSER'] %>
+  password: <%= ENV['PGPASSWORD'] %>
+
+production:
+  <<: *default
+  database: ihdb_production
+  username: ihdb
+  password: <%= ENV["IHDB_DATABASE_PASSWORD"] %>
