@@ -36,7 +36,8 @@
     "build:css:dev": "tailwindcss -i ./app/assets/stylesheets/application.css -o ./app/assets/builds/application.css",
     "build:css": "yarn build:css:dev && postcss ./app/assets/builds/application.css -o ./app/assets/builds/application.css",
     "build:dev": "node esbuild.config.js",
-    "build": "yarn build:dev && esbuild ./app/assets/builds/application.js --minify > ./app/assets/builds/application.min.js"
+    "build": "yarn build:dev && esbuild ./app/assets/builds/application.js --minify > ./app/assets/builds/application.min.js",
+    "lint": "yarn eslint . --ext js,ts --fix && rubocop -A"
   },
   "engines": {
     "node": ">=16.0.0 <19.0.0"
