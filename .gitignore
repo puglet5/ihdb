@@ -25,8 +25,7 @@
 yarn-debug.log*
 .yarn-integrity
 mkmf.log
-.vscode/tasks.json
-.vscode/settings.json
+.vscode/extensions.json
 /public/packs
 /public/images
 /public/packs-test
@@ -63,3 +62,11 @@ coverage
 tailwind-full.config.js
 
 meta.json
+
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
