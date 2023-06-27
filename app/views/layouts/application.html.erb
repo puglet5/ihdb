@@ -8,9 +8,15 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+
+    <%= hotwire_livereload_tags if Rails.env.development? %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="text-neutral-800 bg-white flex flex-col justify-between h-screen">
+    <%= render "shared/nav" %>
+    <main class="flex-grow h-full container">
+      <%= yield %>
+    </main>
+    <%= render "shared/footer" %>
   </body>
 </html>
