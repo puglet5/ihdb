@@ -5,12 +5,18 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.2.1'
 
+gem 'active_record_extended', '~> 3.0'
+gem 'active_storage-send_zip', '~> 0.3.4'
+gem 'activestorage-validator', '~> 0.3'
+gem 'ar_transaction_changes', '~> 1.1'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'cssbundling-rails'
 gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'dotenv-rails', '~> 2.8'
+gem 'has_scope', '~> 0.8.0'
 gem 'image_processing', '~> 1.2'
 gem 'jsbundling-rails'
+gem 'ledermann-rails-settings', '~> 2.5'
 gem 'pg', '~> 1.1'
 gem 'propshaft'
 gem 'puma', '>= 5.6.4'
