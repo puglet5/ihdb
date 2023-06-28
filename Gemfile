@@ -71,3 +71,5 @@ group :test do
   gem 'webdrivers'
   gem 'webmock'
 end
+
+gem 'rbs_rails', '~> 0.12.0'

@@ -70,3 +70,5 @@ meta.json
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+.gem_rbs_collection
