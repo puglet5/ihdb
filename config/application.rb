@@ -25,6 +25,8 @@ module HSDB
 
     config.time_zone = 'Moscow'
 
+    config.active_job.queue_adapter = :sidekiq
+
     config.action_mailer.deliver_later_queue_name = nil
     config.action_mailbox.queues.routing    = nil
 
