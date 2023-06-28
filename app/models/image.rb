@@ -16,9 +16,14 @@
 #  index_images_on_imageable  (imageable_type,imageable_id)
 #
 class Image < ApplicationRecord
-  belongs_to :imageable, polymorphic: true
+  include ProcessImage
+  include ArTransactionChanges
+
+  belongs_to :imageable, polymorphic: true, inverse_of: :images, touch: true
 
   has_one_attached :image do |blob|
     blob.variant :thumb, resize: '400x300^', crop: '400x300+0+0', format: :jpg
   end
+
+  validates :image, blob: { content_type: ['image/png', 'image/jpg', 'image/jpeg', 'image/gif'] }
 end
