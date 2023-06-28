@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
-    "@types/node": "^20.3.1",
+    "@types/node": "^20.3.2",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
     "@yarnpkg/sdks": "^3.0.0-rc.46",
@@ -30,7 +30,7 @@
     "postcss-cli": "^10.1.0",
     "postcss-nesting": "^11.3.0",
     "tailwind-config-viewer": "^1.7.2",
-    "typescript": "^5.1.3"
+    "typescript": "^5.1.5"
   },
   "scripts": {
     "build:css:dev": "tailwindcss -i ./app/assets/stylesheets/application.css -o ./app/assets/builds/application.css",
