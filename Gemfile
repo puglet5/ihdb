@@ -19,7 +19,6 @@ gem 'rack-mini-profiler', '~> 3.0'
 gem 'rails', '~> 7.0.5'
 gem 'rails-i18n', '~> 7.0.4'
 gem 'rails_semantic_logger', '~> 4.10'
-gem 'rbs_rails', '~> 0.12.0'
 gem 'redis', '~> 5.0'
 gem 'redis-client', '~> 0.14'
 gem 'simple_form', '~> 5.1'
@@ -55,11 +54,14 @@ group :development do
   gem 'letter_opener'
   gem 'license_finder', '~> 7.0'
   gem 'rails-erd'
+  gem 'rbs', '~> 3.1', require: false
+  gem 'rbs_rails', require: false
   gem 'rubocop', '~> 1.35', '>= 1.35.1', require: false
   gem 'rubocop-performance', '~> 1.14', '>= 1.14.3', require: false
   gem 'rubocop-rails', '~> 2.15', '>= 2.15.2', require: false
   gem 'solargraph', '~> 0.48'
   gem 'solargraph-rails', '~> 1.1'
+  gem 'steep', require: false
   gem 'web-console'
 end
 
