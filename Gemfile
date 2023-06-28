@@ -19,6 +19,7 @@ gem 'rack-mini-profiler', '~> 3.0'
 gem 'rails', '~> 7.0.5'
 gem 'rails-i18n', '~> 7.0.4'
 gem 'rails_semantic_logger', '~> 4.10'
+gem 'rbs_rails', '~> 0.12.0'
 gem 'redis', '~> 5.0'
 gem 'redis-client', '~> 0.14'
 gem 'simple_form', '~> 5.1'
@@ -71,5 +72,3 @@ group :test do
   gem 'webdrivers'
   gem 'webmock'
 end
-
-gem 'rbs_rails', '~> 0.12.0'
