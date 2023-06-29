@@ -11,7 +11,7 @@
 #
 class Poster < ApplicationRecord
   belongs_to :user
-  has_many :images, as: :imageable, inverse_of: :poster, dependent: :destroy
+  has_many :images, as: :imageable, dependent: :destroy
 
   validates :title, presence: true
 end
