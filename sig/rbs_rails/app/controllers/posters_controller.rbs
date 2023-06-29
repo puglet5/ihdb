@@ -1,0 +1,6 @@
+class PostersController
+  @query: Poster::ActiveRecord_Relation
+  @pagy: untyped
+  @poster: Poster
+  @posters: Poster::ActiveRecord_Relation
+end

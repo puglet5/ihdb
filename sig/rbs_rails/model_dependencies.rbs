@@ -10,6 +10,8 @@ class ApplicationRecord < ActiveRecord::Base
 end
 class Image::ActiveRecord_Associations_CollectionProxy < ActiveRecord::Associations::CollectionProxy
 end
+class Poster::ActiveRecord_Associations_CollectionProxy < ActiveRecord::Associations::CollectionProxy
+end
 class ActiveRecord::Associations::CollectionProxy < ActiveRecord::Relation
 end
 class ActiveRecord::Relation < Object

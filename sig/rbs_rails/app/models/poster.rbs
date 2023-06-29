@@ -145,6 +145,42 @@ class Poster < ::ApplicationRecord
     def restore_updated_at!: () -> void
 
     def clear_updated_at_change: () -> void
+
+    def user_id: () -> Integer?
+
+    def user_id=: (Integer?) -> Integer?
+
+    def user_id?: () -> bool
+
+    def user_id_changed?: () -> bool
+
+    def user_id_change: () -> [ Integer?, Integer? ]
+
+    def user_id_will_change!: () -> void
+
+    def user_id_was: () -> Integer?
+
+    def user_id_previously_changed?: () -> bool
+
+    def user_id_previous_change: () -> Array[Integer?]?
+
+    def user_id_previously_was: () -> Integer?
+
+    def user_id_before_last_save: () -> Integer?
+
+    def user_id_change_to_be_saved: () -> Array[Integer?]?
+
+    def user_id_in_database: () -> Integer?
+
+    def saved_change_to_user_id: () -> Array[Integer?]?
+
+    def saved_change_to_user_id?: () -> bool
+
+    def will_save_change_to_user_id?: () -> bool
+
+    def restore_user_id!: () -> void
+
+    def clear_user_id_change: () -> void
   end
   include GeneratedAttributeMethods
   def images: () -> Image::ActiveRecord_Associations_CollectionProxy
@@ -152,6 +188,12 @@ class Poster < ::ApplicationRecord
   def image_ids: () -> Array[Integer]
   def image_ids=: (Array[Integer]) -> Array[Integer]
 
+  def user: () -> User
+  def user=: (User?) -> User?
+  def reload_user: () -> User?
+  def build_user: (untyped) -> User
+  def create_user: (untyped) -> User
+  def create_user!: (untyped) -> User
   module GeneratedAssociationMethods
   end
   include GeneratedAssociationMethods
