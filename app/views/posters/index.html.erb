@@ -1,3 +1,10 @@
 <div class="text-center">
-  Posters index.
+  <span>
+    Total posters: <%= @posters.count %>
+  </span>
+  <div>
+    <% @posters.each do |poster| %>
+      <%= link_to poster.title, poster %>
+    </div>
+  <% end %>
 </div>

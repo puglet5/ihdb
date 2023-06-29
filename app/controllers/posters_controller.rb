@@ -14,8 +14,7 @@ class PostersController < ApplicationController
   end
 
   def show
-    @poster = Poster.with_attached_images
-                    .find(params[:id])
+    @poster = Poster.find(params[:id])
 
     respond_to do |format|
       format.html do
@@ -47,7 +46,7 @@ class PostersController < ApplicationController
   end
 
   def update
-    if @poster.update
+    if @poster.update poster_params
       redirect_to @poster
       flash[:success] = 'Poster updated!'
     else
