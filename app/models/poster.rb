@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 # == Schema Information
-# Schema version: 20230628134816
 #
 # Table name: posters
 #
@@ -11,7 +10,8 @@
 #  updated_at :datetime         not null
 #
 class Poster < ApplicationRecord
-  has_many :images, as: :imageable, dependent: :destroy
+  belongs_to :user
+  has_many :images, as: :imageable, inverse_of: :poster, dependent: :destroy
 
   validates :title, presence: true
 end

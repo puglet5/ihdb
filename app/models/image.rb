@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 # == Schema Information
-# Schema version: 20230628134816
 #
 # Table name: images
 #

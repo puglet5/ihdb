@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ihdb</title>
+    <title>ihdb</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,9 +12,12 @@
     <%= hotwire_livereload_tags if Rails.env.development? %>
   </head>
 
-  <body class="text-neutral-800 bg-white flex flex-col justify-between h-screen">
+  <body class="flex flex-col justify-between h-screen bg-white text-neutral-800">
     <%= render "shared/nav" %>
-    <main class="flex-grow h-full container">
+    <%= render "shared/breadcrumbs" %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <main class="container flex-grow h-full">
       <%= yield %>
     </main>
     <%= render "shared/footer" %>
