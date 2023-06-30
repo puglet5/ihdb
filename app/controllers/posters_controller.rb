@@ -25,6 +25,7 @@ class PostersController < ApplicationController
 
   def new
     @poster = current_user.posters.build poster_params
+    @poster.images.build
 
     breadcrumb 'New Poster', %i[new poster], match: :exclusive
   end
@@ -41,6 +42,7 @@ class PostersController < ApplicationController
       redirect_to @poster
       flash[:success] = 'Poster added!'
     else
+      @poster.images.build
       render :new, status: :unprocessable_entity
     end
   end
@@ -72,7 +74,8 @@ class PostersController < ApplicationController
   def poster_params
     params.fetch(:poster, {}).permit(
       :title,
-      images: []
+      :description,
+      images_attributes: %i[id image]
     )
   end
 end

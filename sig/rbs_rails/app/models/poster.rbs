@@ -181,13 +181,70 @@ class Poster < ::ApplicationRecord
     def restore_user_id!: () -> void
 
     def clear_user_id_change: () -> void
+
+    def plain_text_description: () -> String?
+
+    def plain_text_description=: (String?) -> String?
+
+    def plain_text_description?: () -> bool
+
+    def plain_text_description_changed?: () -> bool
+
+    def plain_text_description_change: () -> [ String?, String? ]
+
+    def plain_text_description_will_change!: () -> void
+
+    def plain_text_description_was: () -> String?
+
+    def plain_text_description_previously_changed?: () -> bool
+
+    def plain_text_description_previous_change: () -> Array[String?]?
+
+    def plain_text_description_previously_was: () -> String?
+
+    def plain_text_description_before_last_save: () -> String?
+
+    def plain_text_description_change_to_be_saved: () -> Array[String?]?
+
+    def plain_text_description_in_database: () -> String?
+
+    def saved_change_to_plain_text_description: () -> Array[String?]?
+
+    def saved_change_to_plain_text_description?: () -> bool
+
+    def will_save_change_to_plain_text_description?: () -> bool
+
+    def restore_plain_text_description!: () -> void
+
+    def clear_plain_text_description_change: () -> void
   end
   include GeneratedAttributeMethods
   def images: () -> Image::ActiveRecord_Associations_CollectionProxy
   def images=: (Image::ActiveRecord_Associations_CollectionProxy | Array[Image]) -> (Image::ActiveRecord_Associations_CollectionProxy | Array[Image])
   def image_ids: () -> Array[Integer]
   def image_ids=: (Array[Integer]) -> Array[Integer]
-
+  def image_attachments: () -> ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy
+  def image_attachments=: (ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy | Array[ActiveStorage::Attachment]) -> (ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy | Array[ActiveStorage::Attachment])
+  def image_attachment_ids: () -> Array[Integer]
+  def image_attachment_ids=: (Array[Integer]) -> Array[Integer]
+  def thumbnail_attachment: () -> ActiveStorage::Attachment?
+  def thumbnail_attachment=: (ActiveStorage::Attachment?) -> ActiveStorage::Attachment?
+  def build_thumbnail_attachment: (untyped) -> ActiveStorage::Attachment
+  def create_thumbnail_attachment: (untyped) -> ActiveStorage::Attachment
+  def create_thumbnail_attachment!: (untyped) -> ActiveStorage::Attachment
+  def reload_thumbnail_attachment: () -> ActiveStorage::Attachment?
+  def thumbnail_blob: () -> ActiveStorage::Blob?
+  def thumbnail_blob=: (ActiveStorage::Blob?) -> ActiveStorage::Blob?
+  def build_thumbnail_blob: (untyped) -> ActiveStorage::Blob
+  def create_thumbnail_blob: (untyped) -> ActiveStorage::Blob
+  def create_thumbnail_blob!: (untyped) -> ActiveStorage::Blob
+  def reload_thumbnail_blob: () -> ActiveStorage::Blob?
+  def rich_text_description: () -> ActionText::RichText?
+  def rich_text_description=: (ActionText::RichText?) -> ActionText::RichText?
+  def build_rich_text_description: (untyped) -> ActionText::RichText
+  def create_rich_text_description: (untyped) -> ActionText::RichText
+  def create_rich_text_description!: (untyped) -> ActionText::RichText
+  def reload_rich_text_description: () -> ActionText::RichText?
   def user: () -> User
   def user=: (User?) -> User?
   def reload_user: () -> User?
@@ -195,10 +252,21 @@ class Poster < ::ApplicationRecord
   def create_user: (untyped) -> User
   def create_user!: (untyped) -> User
   module GeneratedAssociationMethods
+    def thumbnail: () -> ActiveStorage::Attached::One
+
+    def thumbnail=: (ActionDispatch::Http::UploadedFile) -> ActionDispatch::Http::UploadedFile
+                  | (Rack::Test::UploadedFile) -> Rack::Test::UploadedFile
+                  | (ActiveStorage::Blob) -> ActiveStorage::Blob
+                  | (String) -> String
+                  | ({ io: IO, filename: String, content_type: String? }) -> { io: IO, filename: String, content_type: String? }
+                  | (nil) -> nil
   end
   include GeneratedAssociationMethods
 
+  def self.with_attached_thumbnail: () -> ActiveRecord_Relation
+
   module GeneratedRelationMethods
+    def with_attached_thumbnail: () -> ActiveRecord_Relation
   end
 
   class ActiveRecord_Relation < ::ActiveRecord::Relation

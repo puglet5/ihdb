@@ -1,0 +1,4 @@
+module Authorship
+  extend ActiveSupport::Concern
+  def included: (?untyped? base) { () -> untyped } -> untyped
+end
