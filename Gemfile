@@ -50,6 +50,7 @@ group :development, :test do
   gem 'fuubar', '~> 2.5'
   gem 'listen', '~> 3.7'
   gem 'rspec-rails', '~> 6'
+  gem 'typeprof', '~> 0.21.7'
 end
 
 group :development do

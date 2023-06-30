@@ -453,6 +453,8 @@ GEM
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
       railties (>= 6.0.0)
+    typeprof (0.21.7)
+      rbs (>= 1.8.1)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.4.2)
@@ -553,6 +555,7 @@ DEPENDENCIES
   steep
   stimulus-rails
   turbo-rails
+  typeprof (~> 0.21.7)
   tzinfo-data
   web-console
   webdrivers

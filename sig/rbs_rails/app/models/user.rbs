@@ -289,18 +289,113 @@ class User < ::ApplicationRecord
     def restore_updated_at!: () -> void
 
     def clear_updated_at_change: () -> void
+
+    def first_name: () -> String
+
+    def first_name=: (String) -> String
+
+    def first_name?: () -> bool
+
+    def first_name_changed?: () -> bool
+
+    def first_name_change: () -> [ String?, String? ]
+
+    def first_name_will_change!: () -> void
+
+    def first_name_was: () -> String?
+
+    def first_name_previously_changed?: () -> bool
+
+    def first_name_previous_change: () -> Array[String?]?
+
+    def first_name_previously_was: () -> String?
+
+    def first_name_before_last_save: () -> String?
+
+    def first_name_change_to_be_saved: () -> Array[String?]?
+
+    def first_name_in_database: () -> String?
+
+    def saved_change_to_first_name: () -> Array[String?]?
+
+    def saved_change_to_first_name?: () -> bool
+
+    def will_save_change_to_first_name?: () -> bool
+
+    def restore_first_name!: () -> void
+
+    def clear_first_name_change: () -> void
+
+    def last_name: () -> String
+
+    def last_name=: (String) -> String
+
+    def last_name?: () -> bool
+
+    def last_name_changed?: () -> bool
+
+    def last_name_change: () -> [ String?, String? ]
+
+    def last_name_will_change!: () -> void
+
+    def last_name_was: () -> String?
+
+    def last_name_previously_changed?: () -> bool
+
+    def last_name_previous_change: () -> Array[String?]?
+
+    def last_name_previously_was: () -> String?
+
+    def last_name_before_last_save: () -> String?
+
+    def last_name_change_to_be_saved: () -> Array[String?]?
+
+    def last_name_in_database: () -> String?
+
+    def saved_change_to_last_name: () -> Array[String?]?
+
+    def saved_change_to_last_name?: () -> bool
+
+    def will_save_change_to_last_name?: () -> bool
+
+    def restore_last_name!: () -> void
+
+    def clear_last_name_change: () -> void
   end
   include GeneratedAttributeMethods
   def posters: () -> Poster::ActiveRecord_Associations_CollectionProxy
   def posters=: (Poster::ActiveRecord_Associations_CollectionProxy | Array[Poster]) -> (Poster::ActiveRecord_Associations_CollectionProxy | Array[Poster])
   def poster_ids: () -> Array[Integer]
   def poster_ids=: (Array[Integer]) -> Array[Integer]
+  def avatar_attachment: () -> ActiveStorage::Attachment?
+  def avatar_attachment=: (ActiveStorage::Attachment?) -> ActiveStorage::Attachment?
+  def build_avatar_attachment: (untyped) -> ActiveStorage::Attachment
+  def create_avatar_attachment: (untyped) -> ActiveStorage::Attachment
+  def create_avatar_attachment!: (untyped) -> ActiveStorage::Attachment
+  def reload_avatar_attachment: () -> ActiveStorage::Attachment?
+  def avatar_blob: () -> ActiveStorage::Blob?
+  def avatar_blob=: (ActiveStorage::Blob?) -> ActiveStorage::Blob?
+  def build_avatar_blob: (untyped) -> ActiveStorage::Blob
+  def create_avatar_blob: (untyped) -> ActiveStorage::Blob
+  def create_avatar_blob!: (untyped) -> ActiveStorage::Blob
+  def reload_avatar_blob: () -> ActiveStorage::Blob?
 
   module GeneratedAssociationMethods
+    def avatar: () -> ActiveStorage::Attached::One
+
+    def avatar=: (ActionDispatch::Http::UploadedFile) -> ActionDispatch::Http::UploadedFile
+               | (Rack::Test::UploadedFile) -> Rack::Test::UploadedFile
+               | (ActiveStorage::Blob) -> ActiveStorage::Blob
+               | (String) -> String
+               | ({ io: IO, filename: String, content_type: String? }) -> { io: IO, filename: String, content_type: String? }
+               | (nil) -> nil
   end
   include GeneratedAssociationMethods
 
+  def self.with_attached_avatar: () -> ActiveRecord_Relation
+
   module GeneratedRelationMethods
+    def with_attached_avatar: () -> ActiveRecord_Relation
   end
 
   class ActiveRecord_Relation < ::ActiveRecord::Relation
