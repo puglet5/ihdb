@@ -18,6 +18,7 @@ gem 'image_processing', '~> 1.2'
 gem 'jsbundling-rails'
 gem 'ledermann-rails-settings', '~> 2.5'
 gem 'loaf', '~> 0.10.0'
+gem 'name_of_person', '~> 1.1'
 gem 'pagy', '~> 6.0'
 gem 'pg', '~> 1.1'
 gem 'propshaft'
@@ -84,5 +85,3 @@ group :test do
   gem 'webdrivers'
   gem 'webmock'
 end
-
-gem 'name_of_person', '~> 1.1'

@@ -23,14 +23,14 @@
     "@types/node": "^20.3.2",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
-    "@yarnpkg/sdks": "^3.0.0-rc.46",
+    "@yarnpkg/sdks": "^3.0.0-rc.47",
     "cssnano": "^6.0.1",
     "eslint": "^8.43.0",
     "postcss": "^8.4.24",
     "postcss-cli": "^10.1.0",
     "postcss-nesting": "^11.3.0",
     "tailwind-config-viewer": "^1.7.2",
-    "typescript": "^5.1.5"
+    "typescript": "^5.1.6"
   },
   "scripts": {
     "build:css:dev": "tailwindcss -i ./app/assets/stylesheets/application.css -o ./app/assets/builds/application.css",
