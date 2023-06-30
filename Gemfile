@@ -84,3 +84,5 @@ group :test do
   gem 'webdrivers'
   gem 'webmock'
 end
+
+gem 'name_of_person', '~> 1.1'
