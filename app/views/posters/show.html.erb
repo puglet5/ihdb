@@ -3,7 +3,7 @@
 
   <div class="flex flex-wrap space-x-2 space-y-2">
     <% @poster.images.each do |image| %>
-      <%= image_tag(image.image.variant(:thumb).processed.url) %>
+      <%= image_tag original_or_variant(image.image, image.image.variant(:thumb)) %>
     <% end %>
   </div>
 
