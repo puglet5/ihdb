@@ -3,8 +3,11 @@
     Total posters: <%= @posters.count %>
   </span>
   <div>
+    <%= link_to 'New Poster', [:new, :poster] %>
+  </div>
+  <div>
     <% @posters.each do |poster| %>
       <%= link_to poster.title, poster %>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>

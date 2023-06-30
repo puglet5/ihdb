@@ -1,5 +1,12 @@
 <div class="text-center">
   <%= @poster.title %>
+
+  <div class="flex flex-wrap space-x-2 space-y-2">
+    <% @poster.images.each do |image| %>
+      <%= image_tag(image.image.variant(:thumb).processed.url) %>
+    <% end %>
+  </div>
+
   <%= link_to 'Edit', [:edit, @poster] %>
   <%= link_to 'Delete', @poster, data: { turbo_method: :delete, turbo_confirm: "Are you sure ?" } %>
 </div>
