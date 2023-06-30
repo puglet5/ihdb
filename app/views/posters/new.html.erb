@@ -4,9 +4,9 @@
       controller: "uppy",
       uppy: "poster[images_attributes][][image]",
       uppy_target: "div",
-      uppy_allowmultiple_value: true,
-      uppy_thumbnails_value: true,
-      uploads_allowedfiletypes_value: ["image/*"]
+      uppy_allowmultiplefiles_value: true,
+      uppy_generatethumbnails_value: true,
+      uppy_allowedfiletypes_value: ["image/*"]
     } do %>
     Images
     <%= tag.div class: "flex items-center justify-center w-full p-2 pr-6 text-sm bg-white border border-gray-300 rounded-md cursor-pointer hover:bg-gray-100 py-auto", data: { uppy_target: "trigger"} do %>
