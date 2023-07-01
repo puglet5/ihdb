@@ -1,4 +1,7 @@
 import "trix"
 import "@rails/actiontext"
 import "@hotwired/turbo-rails"
+import "jquery/dist/jquery.slim.js"
+import "@client-side-validations/client-side-validations/src"
+import "@client-side-validations/simple-form/src"
 import "./controllers"

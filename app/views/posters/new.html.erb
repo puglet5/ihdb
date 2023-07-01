@@ -1,4 +1,4 @@
-<%= simple_form_for @poster do |f| %>
+<%= simple_form_for @poster, validate: true do |f| %>
   <%= f.input :title, placeholder: "Poster title", hint: false, label: false, error: false %>
   <%= tag.div class: "row-span-2", data: {
       controller: "uppy",
