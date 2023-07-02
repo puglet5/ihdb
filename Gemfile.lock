@@ -536,7 +536,7 @@ DEPENDENCIES
   rubocop-performance (~> 1.14, >= 1.14.3)
   rubocop-rails (~> 2.15, >= 2.15.2)
   shoulda-matchers (~> 5.1)
-  sidekiq (~> 7.0)
+  sidekiq (~> 7.1)
   simple_form (~> 5.1)
   simplecov (~> 0.22)
   solargraph (~> 0.48)
