@@ -338,13 +338,13 @@ module ActiveStorage
     def attachment_ids=: (Array[Integer]) -> Array[Integer]
     def preview_image_attachment: () -> ActiveStorage::Attachment?
     def preview_image_attachment=: (ActiveStorage::Attachment?) -> ActiveStorage::Attachment?
-    def build_preview_image_attachment: (untyped) -> ActiveStorage::Attachment
+    def build_preview_image_attachment: (?untyped) -> ActiveStorage::Attachment
     def create_preview_image_attachment: (untyped) -> ActiveStorage::Attachment
     def create_preview_image_attachment!: (untyped) -> ActiveStorage::Attachment
     def reload_preview_image_attachment: () -> ActiveStorage::Attachment?
     def preview_image_blob: () -> ActiveStorage::Blob?
     def preview_image_blob=: (ActiveStorage::Blob?) -> ActiveStorage::Blob?
-    def build_preview_image_blob: (untyped) -> ActiveStorage::Blob
+    def build_preview_image_blob: (?untyped) -> ActiveStorage::Blob
     def create_preview_image_blob: (untyped) -> ActiveStorage::Blob
     def create_preview_image_blob!: (untyped) -> ActiveStorage::Blob
     def reload_preview_image_blob: () -> ActiveStorage::Blob?

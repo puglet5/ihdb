@@ -186,13 +186,13 @@ class Image < ::ApplicationRecord
 
   def image_attachment: () -> ActiveStorage::Attachment?
   def image_attachment=: (ActiveStorage::Attachment?) -> ActiveStorage::Attachment?
-  def build_image_attachment: (untyped) -> ActiveStorage::Attachment
+  def build_image_attachment: (?untyped) -> ActiveStorage::Attachment
   def create_image_attachment: (untyped) -> ActiveStorage::Attachment
   def create_image_attachment!: (untyped) -> ActiveStorage::Attachment
   def reload_image_attachment: () -> ActiveStorage::Attachment?
   def image_blob: () -> ActiveStorage::Blob?
   def image_blob=: (ActiveStorage::Blob?) -> ActiveStorage::Blob?
-  def build_image_blob: (untyped) -> ActiveStorage::Blob
+  def build_image_blob: (?untyped) -> ActiveStorage::Blob
   def create_image_blob: (untyped) -> ActiveStorage::Blob
   def create_image_blob!: (untyped) -> ActiveStorage::Blob
   def reload_image_blob: () -> ActiveStorage::Blob?

@@ -229,19 +229,19 @@ class Poster < ::ApplicationRecord
   def image_attachment_ids=: (Array[Integer]) -> Array[Integer]
   def thumbnail_attachment: () -> ActiveStorage::Attachment?
   def thumbnail_attachment=: (ActiveStorage::Attachment?) -> ActiveStorage::Attachment?
-  def build_thumbnail_attachment: (untyped) -> ActiveStorage::Attachment
+  def build_thumbnail_attachment: (?untyped) -> ActiveStorage::Attachment
   def create_thumbnail_attachment: (untyped) -> ActiveStorage::Attachment
   def create_thumbnail_attachment!: (untyped) -> ActiveStorage::Attachment
   def reload_thumbnail_attachment: () -> ActiveStorage::Attachment?
   def thumbnail_blob: () -> ActiveStorage::Blob?
   def thumbnail_blob=: (ActiveStorage::Blob?) -> ActiveStorage::Blob?
-  def build_thumbnail_blob: (untyped) -> ActiveStorage::Blob
+  def build_thumbnail_blob: (?untyped) -> ActiveStorage::Blob
   def create_thumbnail_blob: (untyped) -> ActiveStorage::Blob
   def create_thumbnail_blob!: (untyped) -> ActiveStorage::Blob
   def reload_thumbnail_blob: () -> ActiveStorage::Blob?
   def rich_text_description: () -> ActionText::RichText?
   def rich_text_description=: (ActionText::RichText?) -> ActionText::RichText?
-  def build_rich_text_description: (untyped) -> ActionText::RichText
+  def build_rich_text_description: (?untyped) -> ActionText::RichText
   def create_rich_text_description: (untyped) -> ActionText::RichText
   def create_rich_text_description!: (untyped) -> ActionText::RichText
   def reload_rich_text_description: () -> ActionText::RichText?

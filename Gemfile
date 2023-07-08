@@ -68,14 +68,14 @@ group :development do
   gem 'immigrant'
   gem 'license_finder', '~> 7.0'
   gem 'rails-erd'
-  gem 'rbs', '~> 3.1', require: false
-  gem 'rbs_rails', require: false
+  gem 'rbs', git: 'https://github.com/ruby/rbs', require: false
+  gem 'rbs_rails', git: 'https://github.com/pocke/rbs_rails', require: false
   gem 'rubocop', '~> 1.35', '>= 1.35.1', require: false
   gem 'rubocop-performance', '~> 1.14', '>= 1.14.3', require: false
   gem 'rubocop-rails', '~> 2.15', '>= 2.15.2', require: false
   gem 'solargraph', '~> 0.48'
   gem 'solargraph-rails', '~> 1.1'
-  gem 'steep', require: false
+  gem 'steep', git: 'https://github.com/soutaro/steep', require: false
   gem 'web-console'
 end
 
