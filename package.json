@@ -15,6 +15,7 @@
     "autoprefixer": "^10.4.14",
     "esbuild": "^0.18.14",
     "esbuild-rails": "^1.0.7",
+    "hotkeys-js": "^3.11.2",
     "jquery": "^3.7.0",
     "postcss": "^8.4.26",
     "tailwindcss": "^3.3.3",

@@ -1,4 +1,8 @@
 ru:
+  language_name: "русский"
+  language_abbr: "ru"
+  general:
+    language: "язык"
   pages:
     home: "главная"
   posters:

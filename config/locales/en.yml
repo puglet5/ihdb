@@ -1,4 +1,8 @@
 en:
+  language_name: "english"
+  language_abbr: "en"
+  general:
+    language: "language"
   pages:
     home: "home"
   posters:

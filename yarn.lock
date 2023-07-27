@@ -3288,6 +3288,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hotkeys-js@npm:^3.11.2":
+  version: 3.11.2
+  resolution: "hotkeys-js@npm:3.11.2"
+  checksum: 8e3d984628d2dcf75519017cfdb2c936e7bd0598cf87e3b11e90a5a0b104105042f9979de0118061e819fca95be9c26f27f76447ceeff726678737aaedcd9707
+  languageName: node
+  linkType: hard
+
 "http-assert@npm:^1.3.0":
   version: 1.5.0
   resolution: "http-assert@npm:1.5.0"
@@ -3434,6 +3441,7 @@ __metadata:
     esbuild: ^0.18.14
     esbuild-rails: ^1.0.7
     eslint: ^8.45.0
+    hotkeys-js: ^3.11.2
     jquery: ^3.7.0
     postcss: ^8.4.26
     postcss-cli: ^10.1.0
