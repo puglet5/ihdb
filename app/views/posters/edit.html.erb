@@ -1,5 +1,6 @@
 <%= simple_form_for @poster do |f| %>
   <%= f.input :title, placeholder: "Poster title", hint: false, label: false, error: false %>
+  <%= f.input :description, as: :rich_text_area, placeholder: "Poster description", hint: false, label: false, error: false %>
   <button type="submit" class="w-full px-5 text-sm font-medium text-center">
     Submit
   </button>

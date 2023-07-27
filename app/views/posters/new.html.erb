@@ -1,5 +1,6 @@
 <%= simple_form_for @poster, validate: true do |f| %>
   <%= f.input :title, placeholder: "Poster title", hint: false, label: false, error: false %>
+  <%= f.input :description, as: :rich_text_area, placeholder: "Poster description", hint: false, label: false, error: false %>
   <%= tag.div class: "row-span-2", data: {
       controller: "uppy",
       uppy: "poster[images_attributes][][image]",
