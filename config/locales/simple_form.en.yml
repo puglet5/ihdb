@@ -29,3 +29,10 @@ en:
     # prompts:
     #   defaults:
     #     age: 'Select your age'
+    labels:
+      user:
+        first_name: "first name"
+        last_name: "last name"
+      poster:
+        title: "title"
+        description: "description"

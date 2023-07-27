@@ -1,6 +1,14 @@
 ru:
   language_name: "русский"
   language_abbr: "ru"
+  forms:
+    description: "описание"
+    title: "название"
+    images: "изображения"
+    image: "изображение"
+    browse: "выбрать"
+    submit: "сохранить"
+    save: "сохранить"
   general:
     language: "язык"
   pages:

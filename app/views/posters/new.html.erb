@@ -9,14 +9,14 @@
       uppy_generatethumbnails_value: true,
       uppy_allowedfiletypes_value: ["image/*"]
     } do %>
-    Images
+    <%= t("forms.images").capitalize %>
     <%= tag.div class: "flex items-center justify-center w-full p-2 pr-6 text-sm bg-white border border-gray-300 rounded-md cursor-pointer hover:bg-gray-100 py-auto", data: { uppy_target: "trigger"} do %>
       <%= tag.p class: "font-medium", data: { uppy_target: "text" }, id: "images-text" do %>
-        Browse...
+        <%= t("forms.browse").capitalize %>
       <% end %>
     <% end %>
   <% end %>
   <button type="submit" class="w-full px-5 text-sm font-medium text-center">
-    Submit
+    <%= t("forms.submit").capitalize %>
   </button>
 <% end %>

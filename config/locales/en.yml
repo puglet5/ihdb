@@ -1,6 +1,14 @@
 en:
   language_name: "english"
   language_abbr: "en"
+  forms:
+    description: "description"
+    title: "title"
+    images: "images"
+    image: "image"
+    browse: "browse"
+    submit: "submit"
+    save: "save"
   general:
     language: "language"
   pages:
@@ -10,3 +18,4 @@ en:
     posters: "posters"
     total: "total posters"
     new: "new poster"
+

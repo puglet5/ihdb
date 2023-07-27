@@ -20,6 +20,11 @@ ru:
         remember_me: 'Запомнить'
         password_confirmation: 'Подтверждение пароля'
         current_password: 'Текущий пароль'
+        first_name: "first name"
+        last_name: "last name"
+      poster:
+        title: "название"
+        description: "описание"
       webmaster_profile:
         first_name: 'Имя'
         last_name: 'Фамилия'
