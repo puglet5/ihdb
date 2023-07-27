@@ -4,12 +4,12 @@
 #
 # Table name: posters
 #
-#  created_at             :datetime         not null
 #  id                     :bigint           not null, primary key
-#  plain_text_description :text
 #  title                  :string
+#  created_at             :datetime         not null
 #  updated_at             :datetime         not null
 #  user_id                :bigint           indexed
+#  plain_text_description :text
 #
 # Indexes
 #
@@ -17,7 +17,7 @@
 #
 # Foreign Keys
 #
-#  fk_rails_f1941d801b  (user_id => users.id)
+#  fk_rails_...  (user_id => users.id)
 #
 class Poster < ApplicationRecord
   include ArTransactionChanges
