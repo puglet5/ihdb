@@ -8,15 +8,15 @@ GIT
 
 GIT
   remote: https://github.com/ruby/rbs
-  revision: db860d127f9bd58f836639c165d724895cd05368
+  revision: e9e0b9fcdadb467a5ac6fc88823333438aa67049
   specs:
     rbs (3.1.0)
 
 GIT
   remote: https://github.com/soutaro/steep
-  revision: 9006641f50ddcc86631a1cb2f0de15ba8ddba207
+  revision: 30162514186899ef39a8e5b200c8ba85cc1327de
   specs:
-    steep (1.5.1)
+    steep (1.5.2)
       activesupport (>= 5.1)
       concurrent-ruby (>= 1.1.10)
       csv (>= 3.0.9)
@@ -80,7 +80,7 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
-    active_record_doctor (1.11.0)
+    active_record_doctor (1.12.0)
       activerecord (>= 4.2.0)
     active_record_extended (3.2.1)
       activerecord (>= 5.2, < 7.2.0)
@@ -136,7 +136,7 @@ GEM
       debug_inspector (>= 0.0.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
-    brakeman (5.4.1)
+    brakeman (6.0.1)
     builder (3.2.4)
     bullet (7.0.7)
       activesupport (>= 3.0.0)
@@ -162,7 +162,7 @@ GEM
       activerecord (>= 5.a)
       database_cleaner-core (~> 2.0.0)
     database_cleaner-core (2.0.1)
-    database_consistency (1.7.17)
+    database_consistency (1.7.18)
       activerecord (>= 3.2)
     date (3.3.3)
     debug (1.8.0)
@@ -262,11 +262,11 @@ GEM
     method_source (1.0.0)
     mini_magick (4.12.0)
     mini_mime (1.1.2)
-    minitest (5.18.1)
+    minitest (5.19.0)
     msgpack (1.7.2)
     name_of_person (1.1.1)
       activesupport (>= 5.2.0)
-    net-imap (0.3.6)
+    net-imap (0.3.7)
       date
       net-protocol
     net-pop (0.1.2)
@@ -364,14 +364,14 @@ GEM
       connection_pool
     regexp_parser (2.8.1)
     regexp_property_values (1.4.0)
-    reline (0.3.6)
+    reline (0.3.7)
       io-console (~> 0.5)
     responders (3.1.0)
       actionpack (>= 5.2)
       railties (>= 5.2)
     reverse_markdown (2.1.1)
       nokogiri
-    rexml (3.2.5)
+    rexml (3.2.6)
     rouge (4.1.2)
     rspec-core (3.12.2)
       rspec-support (~> 3.12.0)
@@ -390,7 +390,7 @@ GEM
       rspec-mocks (~> 3.12)
       rspec-support (~> 3.12)
     rspec-support (3.12.1)
-    rubocop (1.54.2)
+    rubocop (1.55.0)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
@@ -398,7 +398,7 @@ GEM
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
       rexml (>= 3.2.5, < 4.0)
-      rubocop-ast (>= 1.28.0, < 2.0)
+      rubocop-ast (>= 1.28.1, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 3.0)
     rubocop-ast (1.29.0)
@@ -480,14 +480,14 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    websocket-driver (0.7.5)
+    websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     with_env (1.1.0)
     xml-simple (1.1.9)
       rexml
     yard (0.9.34)
-    zeitwerk (2.6.8)
+    zeitwerk (2.6.9)
 
 PLATFORMS
   x86_64-linux
@@ -503,7 +503,7 @@ DEPENDENCIES
   better_errors (~> 2.10)
   binding_of_caller (~> 1.0)
   bootsnap (>= 1.4.4)
-  brakeman (~> 5.4.1)
+  brakeman (~> 6.0)
   bullet (~> 7.0, >= 7.0.3)
   bundler-audit (~> 0.9.1)
   client_side_validations (~> 21.0)

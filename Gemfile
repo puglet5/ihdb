@@ -43,7 +43,7 @@ gem 'client_side_validations-simple_form', '~> 15.0'
 group :development, :test do
   gem 'better_errors', '~> 2.10'
   gem 'binding_of_caller', '~> 1.0'
-  gem 'brakeman', '~> 5.4.1'
+  gem 'brakeman', '~> 6.0'
   gem 'bundler-audit', '~> 0.9.1'
   gem 'database_cleaner-active_record', '~> 2.1'
   gem 'database_consistency', '~> 1.1'
