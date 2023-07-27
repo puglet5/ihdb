@@ -37,7 +37,6 @@ RSpec.describe '/posters', type: :request do
     end
   end
 
-
   describe 'GET /new' do
     it 'renders a successful response' do
       get new_poster_url

@@ -3,8 +3,8 @@
 class PostersController < ApplicationController
   before_action :set_poster, only: %i[show edit update destroy]
 
-  breadcrumb 'Home', :root, match: :exclusive
-  breadcrumb 'Posters', :posters, match: :exclusive
+  breadcrumb 'home', :root, match: :exclusive
+  breadcrumb 'posters.posters', :posters, match: :exclusive
 
   def index
     posters = Poster.all.order('created_at asc')
@@ -27,12 +27,12 @@ class PostersController < ApplicationController
     @poster = current_user.posters.build poster_params
     @poster.images.build
 
-    breadcrumb 'New Poster', %i[new poster], match: :exclusive
+    breadcrumb 'posters.new', %i[new poster], match: :exclusive
   end
 
   def edit
     breadcrumb @poster.title, @poster, match: :exclusive
-    breadcrumb 'Edit', [:edit, @poster], match: :exclusive
+    breadcrumb 'posters.edit', [:edit, @poster], match: :exclusive
   end
 
   def create

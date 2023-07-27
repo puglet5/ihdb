@@ -1,0 +1,8 @@
+ru:
+  pages:
+    home: "главная"
+  posters:
+    poster: "афиша"
+    posters: "афиши"
+    total: "всего афиш"
+    new: "новая афиша"

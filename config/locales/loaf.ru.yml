@@ -1,0 +1,8 @@
+ru:
+  loaf:
+    breadcrumbs:
+      home: 'Главная'
+      posters:
+        posters: 'Афиши'
+        new: 'Новая'
+        edit: 'Редактировать'
