@@ -3,7 +3,7 @@
 class PostersController < ApplicationController
   before_action :set_poster, only: %i[show edit update destroy]
 
-  breadcrumb 'Home', :root
+  breadcrumb 'Home', :root, match: :exclusive
   breadcrumb 'Posters', :posters, match: :exclusive
 
   def index
