@@ -40,6 +40,10 @@ class Poster < ApplicationRecord
 
   validates :title, presence: true
 
+  enum status: { displayed: 0, archived: 1 }, _default: :archived
+  enum condition: { perfect: 0, damaged: 1 }, _default: :damaged
+  enum category: { poster: 0 }, _default: :poster
+
   has_one_attached :thumbnail do |blob|
     blob.variant :thumb, resize: '400x300^', crop: '400x300+0+0', format: :jpg
     blob.variant :banner, resize: '1600x900^', crop: '1600x900+0+0', format: :jpg
