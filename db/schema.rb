@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_01_115203) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_01_121657) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -81,6 +81,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_01_115203) do
     t.integer "condition"
     t.integer "status"
     t.integer "category"
+    t.bigint "locality_id"
+    t.index ["locality_id"], name: "index_posters_on_locality_id"
     t.index ["user_id"], name: "index_posters_on_user_id"
   end
 
@@ -100,5 +102,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_01_115203) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "posters", "localities"
   add_foreign_key "posters", "users"
 end
