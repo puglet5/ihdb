@@ -10,6 +10,13 @@
 #  updated_at             :datetime         not null
 #  user_id                :bigint           indexed
 #  plain_text_description :text
+#  acquisition_date       :date
+#  event_datetime         :datetime
+#  owner                  :string
+#  sku                    :string
+#  condition              :integer
+#  status                 :integer
+#  category               :integer
 #
 # Indexes
 #

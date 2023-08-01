@@ -10,6 +10,13 @@
 #  updated_at             :datetime         not null
 #  user_id                :bigint           indexed
 #  plain_text_description :text
+#  acquisition_date       :date
+#  event_datetime         :datetime
+#  owner                  :string
+#  sku                    :string
+#  condition              :integer
+#  status                 :integer
+#  category               :integer
 #
 # Indexes
 #
@@ -25,6 +32,7 @@ class Poster < ApplicationRecord
   include ProcessImage
 
   belongs_to :user
+  belongs_to :locality, optional: true
   has_many :images, as: :imageable, dependent: :destroy
   has_many :image_attachments, through: :images
 
