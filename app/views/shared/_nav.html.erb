@@ -30,7 +30,7 @@
     </div>
     <div class="place-self-end flex my-auto space-x-2 mr-2">
       <%= tag.div data: { controller: "dropdown" }, class: "my-auto flex items-center" do %>
-        <button class="text-center bg-white rounded-lg focus:ring-4 focus:ring-gray-300 focus:outline-none text-primary-500 hover:text-primary-300" type="button" data-action="click->dropdown#toggle">
+        <button class="text-center bg-white rounded-lg" type="button" data-action="click->dropdown#toggle">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           </svg>
@@ -60,7 +60,7 @@
       <% end %>
 
       <%= tag.div data: { controller: "dropdown" }, class: "my-auto flex items-center mr-4" do %>
-        <button type="button" class="flex mx-0 text-sm bg-white rounded-full md:mr-0 text-primary-300 hover:text-primary-500" aria-expanded="false" data-action="click->dropdown#toggle">
+        <button type="button" class="flex mx-0 text-sm bg-white rounded-full md:mr-0" aria-expanded="false" data-action="click->dropdown#toggle">
           <span class="sr-only">Open user menu</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>

@@ -18,3 +18,7 @@ ru:
     posters: "афиши"
     total: "всего афиш"
     new: "новая афиша"
+  auth:
+    login: "войти"
+    profile: "личный кабинет"
+    logout: "выйти"

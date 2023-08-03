@@ -18,4 +18,7 @@ en:
     posters: "posters"
     total: "total posters"
     new: "new poster"
-
+  auth:
+    login: "log in"
+    profile: "profile page"
+    logout: "log out"
