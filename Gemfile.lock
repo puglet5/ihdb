@@ -8,13 +8,13 @@ GIT
 
 GIT
   remote: https://github.com/ruby/rbs
-  revision: 69311e1da2827d7db4b9349e40f6570e8717dadc
+  revision: edb7e74114226519b7cd89482422e6420a070b90
   specs:
-    rbs (3.1.0)
+    rbs (3.2.0)
 
 GIT
   remote: https://github.com/soutaro/steep
-  revision: 1bce12e475dc7915296d64f50a9b19ac4f9e7a69
+  revision: 78d394e3be837a41cfc71c48070bf464becdf3cd
   specs:
     steep (1.5.3)
       activesupport (>= 5.1)
@@ -163,7 +163,7 @@ GEM
       activerecord (>= 5.a)
       database_cleaner-core (~> 2.0.0)
     database_cleaner-core (2.0.1)
-    database_consistency (1.7.18)
+    database_consistency (1.7.20)
       activerecord (>= 3.2)
     date (3.3.3)
     debug (1.8.0)
@@ -196,7 +196,7 @@ GEM
     factory_bot_rails (6.2.0)
       factory_bot (~> 6.2.0)
       railties (>= 5.0.0)
-    faker (3.2.0)
+    faker (3.2.1)
       i18n (>= 1.8.11, < 2)
     ffi (1.15.5)
     fileutils (1.7.1)
@@ -277,7 +277,7 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.9)
-    nokogiri (1.15.3-x86_64-linux)
+    nokogiri (1.15.4-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     pagy (6.0.4)
@@ -291,7 +291,7 @@ GEM
       activesupport (>= 7.0.0)
       rack
       railties (>= 7.0.0)
-    puma (6.3.0)
+    puma (6.3.1)
       nio4r (~> 2.0)
     pundit-matchers (3.1.2)
       rspec-core (~> 3.12)
@@ -336,7 +336,7 @@ GEM
     rails-html-sanitizer (1.6.0)
       loofah (~> 2.21)
       nokogiri (~> 1.14)
-    rails-i18n (7.0.7)
+    rails-i18n (7.0.8)
       i18n (>= 0.7, < 2)
       railties (>= 6.0.0, < 8)
     rails_semantic_logger (4.12.0)
@@ -361,11 +361,11 @@ GEM
       ffi (~> 1.0)
     redis (5.0.7)
       redis-client (>= 0.9.0)
-    redis-client (0.15.0)
+    redis-client (0.16.0)
       connection_pool
     regexp_parser (2.8.1)
     regexp_property_values (1.4.0)
-    reline (0.3.7)
+    reline (0.3.8)
       io-console (~> 0.5)
     responders (3.1.0)
       actionpack (>= 5.2)
@@ -391,7 +391,7 @@ GEM
       rspec-mocks (~> 3.12)
       rspec-support (~> 3.12)
     rspec-support (3.12.1)
-    rubocop (1.56.0)
+    rubocop (1.56.1)
       base64 (~> 0.1.1)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
@@ -405,7 +405,7 @@ GEM
       unicode-display_width (>= 2.4.0, < 3.0)
     rubocop-ast (1.29.0)
       parser (>= 3.2.1.0)
-    rubocop-performance (1.18.0)
+    rubocop-performance (1.19.0)
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
     rubocop-rails (2.20.2)
