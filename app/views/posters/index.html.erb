@@ -1,6 +1,6 @@
 <div class="text-center">
   <span>
-    <%= t("posters.total").capitalize %>: <%= @posters.count %>
+    <%= t("posters.total").capitalize %>: <%= Poster.all.count %>
   </span>
   <div>
     <%= link_to t("posters.new").capitalize, [:new, :poster] %>
