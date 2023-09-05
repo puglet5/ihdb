@@ -16,7 +16,7 @@ require 'action_cable/engine'
 
 Bundler.require(*Rails.groups)
 
-module HSDB
+module IHDB
   class Application < Rails::Application
     config.load_defaults 7.0
 
