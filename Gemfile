@@ -37,8 +37,8 @@ gem 'stimulus-rails', '~> 1.2'
 gem 'turbo-rails', '~> 1.4'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
-gem 'client_side_validations', '~> 21.0'
-gem 'client_side_validations-simple_form', '~> 15.0'
+gem 'client_side_validations', '~> 22.0'
+gem 'client_side_validations-simple_form', '~> 16.0'
 
 group :development, :test do
   gem 'better_errors', '~> 2.10'
