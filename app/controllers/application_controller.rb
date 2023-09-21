@@ -2,7 +2,7 @@
 
 class ApplicationController < ActionController::Base
   include ActiveStorage::SetCurrent
-  include Pundit::Authorization
+  include Authorization
   include Internationalization
   include Pagy::Backend
 
