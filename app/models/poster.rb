@@ -31,6 +31,8 @@ class Poster < ApplicationRecord
   include Authorship
   include ProcessImage
 
+  resourcify
+
   belongs_to :user
   belongs_to :locality, optional: true
   has_many :images, as: :imageable, dependent: :destroy

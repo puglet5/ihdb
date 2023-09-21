@@ -1,13 +1,15 @@
 # frozen_string_literal: true
 
 class PostersController < ApplicationController
-  before_action :set_poster, only: %i[show edit update destroy]
+  before_action :set_poster, only: %i[edit update destroy]
 
   breadcrumb 'home', :root, match: :exclusive
   breadcrumb 'posters.posters', :posters, match: :exclusive
 
   def index
-    posters = Poster.all.order('created_at asc')
+    posters = Poster.order('created_at asc')
+
+    authorize posters
 
     @query = posters.ransack(params[:query])
     @pagy, @posters = pagy @query.result(distinct: true).order('created_at DESC'), items: 20
@@ -15,6 +17,8 @@ class PostersController < ApplicationController
 
   def show
     @poster = Poster.find(params[:id])
+
+    authorize @poster
 
     respond_to do |format|
       format.html do
@@ -24,6 +28,8 @@ class PostersController < ApplicationController
   end
 
   def new
+    authorize Poster
+
     @poster = current_user.posters.build poster_params
     @poster.images.build
 
@@ -31,11 +37,15 @@ class PostersController < ApplicationController
   end
 
   def edit
+    authorize @poster
+
     breadcrumb @poster.title, @poster, match: :exclusive
     breadcrumb 'posters.edit', [:edit, @poster], match: :exclusive
   end
 
   def create
+    authorize Poster
+
     @poster = current_user.posters.build(poster_params)
 
     if @poster.save
@@ -48,6 +58,8 @@ class PostersController < ApplicationController
   end
 
   def update
+    authorize @poster
+
     if @poster.update poster_params
       redirect_to @poster
       flash[:success] = 'Poster updated!'
@@ -60,6 +72,8 @@ class PostersController < ApplicationController
   end
 
   def destroy
+    authorize @poster
+
     @poster.destroy
     flash[:success] = 'Poster deleted!'
     redirect_to posters_url, status: :see_other

@@ -25,6 +25,7 @@ class User < ApplicationRecord
   include ArTransactionChanges
 
   has_person_name
+  rolify
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
