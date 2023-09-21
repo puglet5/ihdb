@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby/rbs
-  revision: 9a5765ea65104031d69e43571ceb5d0992fbbe93
+  revision: a49877b7aa616f3b11324c6d56fbe1135ed23fcd
   specs:
     rbs (3.2.0)
 
@@ -275,7 +275,7 @@ GEM
       net-protocol
     net-protocol (0.2.1)
       timeout
-    net-smtp (0.3.3)
+    net-smtp (0.4.0)
       net-protocol
     nio4r (2.5.9)
     nokogiri (1.15.4-x86_64-linux)
@@ -294,7 +294,7 @@ GEM
       railties (>= 7.0.0)
     psych (5.1.0)
       stringio
-    puma (6.3.1)
+    puma (6.4.0)
       nio4r (~> 2.0)
     pundit (2.3.1)
       activesupport (>= 3.0.0)
