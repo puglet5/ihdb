@@ -1,26 +1,28 @@
+class ApplicationRecord < ::ActiveRecord::Base
+end
 module ActionText
 end
-class ActionText::Record < ActiveRecord::Base
+class ActionText::Record < ::ActiveRecord::Base
 end
-class ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy < ActiveRecord::Associations::CollectionProxy
+class ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy < ::ActiveRecord::Associations::CollectionProxy
 end
-class ActiveStorage::Blob::ActiveRecord_Associations_CollectionProxy < ActiveRecord::Associations::CollectionProxy
+class ActiveStorage::Blob::ActiveRecord_Associations_CollectionProxy < ::ActiveRecord::Associations::CollectionProxy
 end
 module ActiveStorage
 end
-class ActiveStorage::Record < ActiveRecord::Base
+class ActiveStorage::Record < ::ActiveRecord::Base
 end
-class ActiveStorage::VariantRecord::ActiveRecord_Associations_CollectionProxy < ActiveRecord::Associations::CollectionProxy
+class ActiveStorage::VariantRecord::ActiveRecord_Associations_CollectionProxy < ::ActiveRecord::Associations::CollectionProxy
 end
-class ApplicationRecord < ActiveRecord::Base
+class Role::ActiveRecord_Associations_CollectionProxy < ::ActiveRecord::Associations::CollectionProxy
 end
-class Image::ActiveRecord_Associations_CollectionProxy < ActiveRecord::Associations::CollectionProxy
+class Image::ActiveRecord_Associations_CollectionProxy < ::ActiveRecord::Associations::CollectionProxy
 end
-class Poster::ActiveRecord_Associations_CollectionProxy < ActiveRecord::Associations::CollectionProxy
+class Poster::ActiveRecord_Associations_CollectionProxy < ::ActiveRecord::Associations::CollectionProxy
 end
-class ActiveRecord::Associations::CollectionProxy < ActiveRecord::Relation
+class ActiveRecord::Associations::CollectionProxy < ::ActiveRecord::Relation
 end
-class ActiveRecord::Relation < Object
+class ActiveRecord::Relation < ::Object
 end
 module ActiveRecord::Associations
 end
