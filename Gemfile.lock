@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby/rbs
-  revision: abcc97d3c8b024856ba9603a7ef22d422652ff42
+  revision: 5f992e6dce1cbd380123ad215a3c257157430b88
   specs:
     rbs (3.2.0)
 
@@ -281,7 +281,7 @@ GEM
     nokogiri (1.15.4-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
-    pagy (6.0.4)
+    pagy (6.1.0)
     parallel (1.23.0)
     parser (3.2.2.3)
       ast (~> 2.4.1)
