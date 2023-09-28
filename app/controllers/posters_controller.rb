@@ -1,7 +1,11 @@
 # frozen_string_literal: true
 
 class PostersController < ApplicationController
+  include PurgeImage
+
   before_action :set_poster, only: %i[edit update destroy]
+
+  after_action :verify_authorized
 
   breadcrumb 'home', :root, match: :exclusive
   breadcrumb 'posters.posters', :posters, match: :exclusive
@@ -61,6 +65,11 @@ class PostersController < ApplicationController
     authorize @poster
 
     if @poster.update poster_params
+
+      attachment_params[:purge_attachments]&.each do |signed_id|
+        purge_image signed_id
+      end
+
       redirect_to @poster
       flash[:success] = 'Poster updated!'
     else
@@ -90,6 +99,12 @@ class PostersController < ApplicationController
       :title,
       :description,
       images_attributes: %i[id image]
+    )
+  end
+
+  def attachment_params
+    params.require(:poster).permit(
+      purge_attachments: []
     )
   end
 end
