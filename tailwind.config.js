@@ -7,6 +7,7 @@ module.exports = {
     './app/helpers/**/*.rb',
     './app/assets/stylesheets/**/*.css',
     './app/javascript/**/*.{js,ts}',
+    './node_modules/flowbite-datepicker/**/*.{js,ts,css}'
   ],
 
   theme: {

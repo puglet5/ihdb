@@ -98,6 +98,11 @@ class PostersController < ApplicationController
     params.fetch(:poster, {}).permit(
       :title,
       :description,
+      :status,
+      :category,
+      :sku,
+      :event_datetime,
+      :condition,
       images_attributes: %i[id image]
     )
   end

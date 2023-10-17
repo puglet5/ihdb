@@ -12,3 +12,7 @@
   -o-transition: none !important;
   transition: none !important;
 }
+
+.datepicker-cell.selected {
+  @apply !bg-gray-500
+}

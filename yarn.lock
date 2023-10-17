@@ -469,6 +469,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@popperjs/core@npm:^2.9.3":
+  version: 2.11.8
+  resolution: "@popperjs/core@npm:2.11.8"
+  checksum: e5c69fdebf52a4012f6a1f14817ca8e9599cb1be73dd1387e1785e2ed5e5f0862ff817f420a87c7fc532add1f88a12e25aeb010ffcbdc98eace3d55ce2139cf0
+  languageName: node
+  linkType: hard
+
 "@rails/actioncable@npm:^7.0":
   version: 7.0.5
   resolution: "@rails/actioncable@npm:7.0.5"
@@ -2890,6 +2897,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"flowbite-datepicker@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "flowbite-datepicker@npm:1.2.2"
+  dependencies:
+    flowbite: ^1.4.5
+  checksum: 5adef853a0a4d438acb1b6390da607357104b91e88a86edc35b03fb6e350e77b01cbda6f00a607b6fdf6d67c25f96b2ae332036716b53bc4f9d99aefac8f4d50
+  languageName: node
+  linkType: hard
+
+"flowbite@npm:^1.4.5":
+  version: 1.8.1
+  resolution: "flowbite@npm:1.8.1"
+  dependencies:
+    "@popperjs/core": ^2.9.3
+    mini-svg-data-uri: ^1.4.3
+  checksum: 51fa33656082ae15e66fefdf595d76cad4e7d80795d5c4174e4cfcb56bd03d867a11d42fe83a6adc1272a895edd657a76b6bdad8ccf86781d9bf34a85c516525
+  languageName: node
+  linkType: hard
+
 "foreground-child@npm:^3.1.0":
   version: 3.1.1
   resolution: "foreground-child@npm:3.1.1"
@@ -3501,6 +3527,7 @@ __metadata:
     esbuild: ^0.19.5
     esbuild-rails: ^1.0.7
     eslint: ^8.51.0
+    flowbite-datepicker: ^1.2.2
     hotkeys-js: ^3.12.0
     jquery: ^3.7.1
     postcss: ^8.4.31
@@ -4590,6 +4617,15 @@ __metadata:
   version: 1.0.1
   resolution: "min-indent@npm:1.0.1"
   checksum: bfc6dd03c5eaf623a4963ebd94d087f6f4bbbfd8c41329a7f09706b0cb66969c4ddd336abeb587bc44bc6f08e13bf90f0b374f9d71f9f01e04adc2cd6f083ef1
+  languageName: node
+  linkType: hard
+
+"mini-svg-data-uri@npm:^1.4.3":
+  version: 1.4.4
+  resolution: "mini-svg-data-uri@npm:1.4.4"
+  bin:
+    mini-svg-data-uri: cli.js
+  checksum: 997f1fbd8d59a70f03761e18626d335197a3479cb9d1ff75678e4b64b864d32a0b8fc18115eabde035e5299b8b4a354a78e57dd6ac10f9d604162a6170898d09
   languageName: node
   linkType: hard
 
