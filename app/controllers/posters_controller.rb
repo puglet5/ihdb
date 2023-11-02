@@ -102,8 +102,14 @@ class PostersController < ApplicationController
       :category,
       :sku,
       :event_datetime,
+      :concert,
+      :dimensions,
+      :performer,
+      :fiber_type,
+      :ph_data,
+      :collection,
       :condition,
-      images_attributes: %i[id image]
+      images_attributes: %i[id image category restoration_state]
     )
   end
 

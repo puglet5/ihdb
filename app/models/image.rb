@@ -4,11 +4,13 @@
 #
 # Table name: images
 #
-#  created_at     :datetime         not null
-#  id             :bigint           not null, primary key
-#  imageable_id   :bigint           not null, indexed => [imageable_type]
-#  imageable_type :string           not null, indexed => [imageable_id]
-#  updated_at     :datetime         not null
+#  category          :integer
+#  created_at        :datetime         not null
+#  id                :bigint           not null, primary key
+#  imageable_id      :bigint           not null, indexed => [imageable_type]
+#  imageable_type    :string           not null, indexed => [imageable_id]
+#  restoration_state :integer
+#  updated_at        :datetime         not null
 #
 # Indexes
 #
@@ -23,6 +25,9 @@ class Image < ApplicationRecord
   has_one_attached :image do |blob|
     blob.variant :thumb, resize: '400x300^', crop: '400x300+0+0', format: :jpg
   end
+
+  enum category: { misc: 0, fiber: 1 }, _default: :misc
+  enum restoration_state: { pre: 0, post: 1, other: 3 }, _default: :other
 
   validates :image, blob: { content_type: ['image/png', 'image/jpg', 'image/jpeg', 'image/gif'] }
 

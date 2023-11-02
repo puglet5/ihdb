@@ -1,6 +1,24 @@
 <%= simple_form_for @poster, validate: true do |f| %>
+  title
   <%= f.input :title, placeholder: "Poster title", hint: false, label: false, error: false %>
+  status
+  <%= f.input :status, hint: false, label: false, error: false %>
+  category
+  <%= f.input :category, hint: false, label: false, error: false %>
+  condition
+  <%= f.input :condition, hint: false, label: false, error: false %>
+  sku
+  <%= f.input :sku, hint: false, label: false, error: false %>
+  description
   <%= f.input :description, as: :rich_text_area, placeholder: "Poster description", hint: false, label: false, error: false %>
+  date
+  <div id="event_datetime" class="grid grid-cols-2 mb-6 space-x-4">
+    <div class="mb-4">
+      <%= tag.div data: { controller: "datepicker" } do %>
+        <%= f.input :event_datetime, as: :string, label: false, hint: false, required: true, input_html: { class: "w-full p-4 pr-6 text-sm border-gray-300 rounded-md shadow-sm focus:ring-1 focus:ring-primary-500 focus:border-primary-600", data: { datepicker_target: "input" }, value: @poster.event_datetime&.strftime("%d/%m/%Y") }, placeholder: "DD/MM/YYYY" %>
+      <% end %>
+    </div>
+  </div>
   <%= tag.div class: "row-span-2", data: {
       controller: "uppy",
       uppy: "poster[images_attributes][][image]",

@@ -6,12 +6,18 @@
 #
 #  acquisition_date       :date
 #  category               :integer
+#  collection             :integer          not null
+#  concert                :string
 #  condition              :integer
 #  created_at             :datetime         not null
+#  dimensions             :jsonb
 #  event_datetime         :datetime
+#  fiber_type             :integer          not null
 #  id                     :bigint           not null, primary key
 #  locality_id            :bigint           indexed
 #  owner                  :string
+#  performer              :string
+#  ph_data                :jsonb
 #  plain_text_description :text
 #  sku                    :string
 #  status                 :integer
