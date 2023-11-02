@@ -66,7 +66,7 @@ class Poster < ApplicationRecord
 
   has_rich_text :description
   has_rich_text :fiber_description
-  has_rich_text :condition_descripiton
+  has_rich_text :condition_description
   has_rich_text :notes
 
   before_save { self.plain_text_description = description&.body&.to_plain_text }

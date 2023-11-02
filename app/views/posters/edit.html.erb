@@ -1,6 +1,67 @@
 <%= simple_form_for @poster do |f| %>
+  title
   <%= f.input :title, placeholder: "Poster title", hint: false, label: false, error: false %>
+
+  description
   <%= f.input :description, as: :rich_text_area, placeholder: "Poster description", hint: false, label: false, error: false %>
+
+  performer
+  <%= f.input :performer, placeholder: "Performer", hint: false, label: false, error: false %>
+
+  concert
+  <%= f.input :concert, placeholder: "Concert", hint: false, label: false, error: false %>
+
+  status
+  <div>
+    <%= f.input :status, default: @poster.status, collection: Poster.statuses.keys.map { |s| [s.humanize, s] }, hint: false, label: false %>
+  </div>
+
+  category
+  <div>
+    <%= f.input :category, default: @poster.category, collection: Poster.categories.keys.map { |s| [s.humanize, s] }, hint: false, label: false %>
+  </div>
+
+  fiber_type
+  <div>
+    <%= f.input :fiber_type, default: @poster.fiber_type, collection: Poster.fiber_types.keys.map { |s| [s.humanize, s] }, hint: false, label: false %>
+  </div>
+
+  collection
+  <div>
+    <%= f.input :collection, default: @poster.collection, collection: Poster.collections.keys.map { |s| [s.humanize, s] }, hint: false, label: false %>
+  </div>
+
+  condition
+  <div>
+    <%= f.input :condition, default: @poster.condition, collection: Poster.conditions.keys.map { |s| [s.humanize, s] }, hint: false, label: false %>
+  </div>
+
+  sku
+  <%= f.input :sku, hint: false, label: false, error: false %>
+
+  ph_data
+  <%= f.input :ph_data, hint: false, label: false, error: false %>
+
+  dimensions
+  <%= f.input :dimensions, hint: false, label: false, error: false %>
+
+  fiber_description
+  <%= f.input :fiber_description, as: :rich_text_area, placeholder: "Fiber description", hint: false, label: false, error: false %>
+
+  condition_description
+  <%= f.input :condition_description, as: :rich_text_area, placeholder: "Condition description", hint: false, label: false, error: false %>
+
+  notes
+  <%= f.input :notes, as: :rich_text_area, placeholder: "Poster notes", hint: false, label: false, error: false %>
+
+  date
+  <div id="event_datetime" class="grid grid-cols-2 mb-6 space-x-4">
+    <div class="mb-4">
+      <%= tag.div data: { controller: "datepicker" } do %>
+        <%= f.input :event_datetime, as: :string, label: false, hint: false, required: true, input_html: { class: "w-full p-4 pr-6 text-sm border-gray-300 rounded-md shadow-sm focus:ring-1 focus:ring-primary-500 focus:border-primary-600", data: { datepicker_target: "input" }, value: @poster.event_datetime&.strftime("%d/%m/%Y") }, placeholder: "DD/MM/YYYY" %>
+      <% end %>
+    </div>
+  </div>
 
   <div class="p-6 space-y-2">
     <div class="grid grid-cols-5 overflow-auto gap-y-1 max-h-1/2">
@@ -33,6 +94,22 @@
       <% end %>
     </div>
   </div>
+
+  <%= tag.div class: "row-span-2", data: {
+      controller: "uppy",
+      uppy: "poster[images_attributes][][image]",
+      uppy_target: "div",
+      uppy_allowmultiplefiles_value: true,
+      uppy_generatethumbnails_value: true,
+      uppy_allowedfiletypes_value: ["image/*"]
+    } do %>
+    <%= t("forms.images").capitalize %>
+    <%= tag.div class: "flex items-center justify-center w-full p-2 pr-6 text-sm bg-white border border-gray-300 rounded-md cursor-pointer hover:bg-gray-100 py-auto", data: { uppy_target: "trigger"} do %>
+      <%= tag.p class: "font-medium", data: { uppy_target: "text" }, id: "images-text" do %>
+        <%= t("forms.browse").capitalize %>
+      <% end %>
+    <% end %>
+  <% end %>
 
   <button type="submit" class="w-full px-5 text-sm font-medium text-center">
     <%= t("forms.save").capitalize %>

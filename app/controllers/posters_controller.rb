@@ -108,6 +108,9 @@ class PostersController < ApplicationController
       :fiber_type,
       :ph_data,
       :collection,
+      :fiber_description,
+      :condition_description,
+      :notes,
       :condition,
       images_attributes: %i[id image category restoration_state]
     )
