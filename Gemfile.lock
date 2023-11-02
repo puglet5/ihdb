@@ -8,15 +8,16 @@ GIT
 
 GIT
   remote: https://github.com/ruby/rbs
-  revision: 142f477047e5a2287690941d8c2880fccad60944
+  revision: c4edab40f2dacace8956e7bfdf2e79c15968d36d
   specs:
-    rbs (3.2.0)
+    rbs (3.3.0.pre.1)
+      abbrev
 
 GIT
   remote: https://github.com/soutaro/steep
-  revision: 66a2f95e57fdfd3c8bb3d1745b2e93c689c332ed
+  revision: 74a02f8cd8313b333da6c960d02237b7a260d22c
   specs:
-    steep (1.5.3)
+    steep (1.6.0.pre.3)
       activesupport (>= 5.1)
       concurrent-ruby (>= 1.1.10)
       csv (>= 3.0.9)
@@ -35,6 +36,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    abbrev (0.1.1)
     actioncable (7.1.1)
       actionpack (= 7.1.1)
       activesupport (= 7.1.1)
@@ -144,7 +146,7 @@ GEM
     bindex (0.8.1)
     binding_of_caller (1.0.0)
       debug_inspector (>= 0.0.1)
-    bootsnap (1.16.0)
+    bootsnap (1.17.0)
       msgpack (~> 1.2)
     brakeman (6.0.1)
     builder (3.2.4)
@@ -280,7 +282,7 @@ GEM
     mutex_m (0.1.2)
     name_of_person (1.1.2)
       activesupport (>= 5.2.0)
-    net-imap (0.4.2)
+    net-imap (0.4.3)
       date
       net-protocol
     net-pop (0.1.2)
@@ -315,7 +317,7 @@ GEM
       rspec-expectations (~> 3.12)
       rspec-mocks (~> 3.12)
       rspec-support (~> 3.12)
-    racc (1.7.1)
+    racc (1.7.2)
     rack (3.0.8)
     rack-cors (2.0.1)
       rack (>= 2.0.0)
@@ -370,8 +372,8 @@ GEM
       thor (~> 1.0, >= 1.2.2)
       zeitwerk (~> 2.6)
     rainbow (3.1.1)
-    rake (13.0.6)
-    ransack (4.1.0)
+    rake (13.1.0)
+    ransack (4.1.1)
       activerecord (>= 6.1.5)
       activesupport (>= 6.1.5)
       i18n
@@ -424,12 +426,12 @@ GEM
       rubocop-ast (>= 1.28.1, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 3.0)
-    rubocop-ast (1.29.0)
+    rubocop-ast (1.30.0)
       parser (>= 3.2.1.0)
     rubocop-performance (1.19.1)
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
-    rubocop-rails (2.21.2)
+    rubocop-rails (2.22.1)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.33.0, < 2.0)
@@ -443,7 +445,7 @@ GEM
     securerandom (0.2.2)
     shoulda-matchers (5.3.0)
       activesupport (>= 5.2.0)
-    sidekiq (7.1.6)
+    sidekiq (7.2.0)
       concurrent-ruby (< 2)
       connection_pool (>= 2.3.0)
       rack (>= 2.2.4)
