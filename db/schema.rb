@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_11_02_112104) do
+ActiveRecord::Schema[7.1].define(version: 2023_11_09_132956) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -90,6 +90,9 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_02_112104) do
     t.string "performer"
     t.jsonb "ph_data"
     t.jsonb "dimensions"
+    t.text "plain_text_condition_description"
+    t.text "plain_text_fiber_description"
+    t.text "plain_text_notes"
     t.index ["locality_id"], name: "index_posters_on_locality_id"
     t.index ["user_id"], name: "index_posters_on_user_id"
   end

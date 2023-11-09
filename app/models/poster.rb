@@ -70,5 +70,9 @@ class Poster < ApplicationRecord
   has_rich_text :notes
 
   before_save { self.plain_text_description = description&.body&.to_plain_text }
+  before_save { self.plain_text_fiber_description = fiber_description&.body&.to_plain_text }
+  before_save { self.plain_text_condition_description = condition_description&.body&.to_plain_text }
+  before_save { self.plain_text_notes = notes&.body&.to_plain_text }
+
   after_commit -> { process_image self, thumbnail&.id }, on: %i[create update], unless: -> { transaction_changed_attributes.keys == ['updated_at'] }
 end
