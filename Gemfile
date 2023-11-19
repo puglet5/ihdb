@@ -50,7 +50,7 @@ group :development, :test do
   gem 'database_cleaner-active_record', '~> 2.1'
   gem 'database_consistency', '~> 1.1'
   gem 'debug', '~> 1.8'
-  gem 'factory_bot_rails', '~> 6.2'
+  gem 'factory_bot_rails', '<= 6.2'
   gem 'faker', '~> 3.2'
   gem 'fuubar', '~> 2.5'
   gem 'listen', '~> 3.7'
