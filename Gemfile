@@ -28,7 +28,6 @@ gem 'rack-cors', '~> 2.0'
 gem 'rack-mini-profiler', '~> 3.0'
 gem 'rails', '~> 7.1'
 gem 'rails-i18n', '~> 7.0.4'
-# gem 'rails_semantic_logger', '~> 4.10'
 gem 'ransack', '~> 4.0'
 gem 'redis', '~> 5.0'
 gem 'redis-client', '~> 0.14'
@@ -70,14 +69,9 @@ group :development do
   gem 'immigrant'
   gem 'license_finder', '~> 7.0'
   gem 'rails-erd'
-  gem 'rbs', git: 'https://github.com/ruby/rbs', require: false
-  gem 'rbs_rails', git: 'https://github.com/pocke/rbs_rails', require: false
   gem 'rubocop', '~> 1.35', '>= 1.35.1', require: false
   gem 'rubocop-performance', '~> 1.14', '>= 1.14.3', require: false
   gem 'rubocop-rails', '~> 2.15', '>= 2.15.2', require: false
-  gem 'solargraph', '~> 0.48'
-  gem 'solargraph-rails', '~> 1.1'
-  gem 'steep', git: 'https://github.com/soutaro/steep', require: false
   gem 'web-console'
 end
 

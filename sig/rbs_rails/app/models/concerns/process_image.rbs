@@ -1,4 +1,0 @@
-module ProcessImage
-  extend ActiveSupport::Concern
-  def included: (?untyped? base) { () -> untyped } -> untyped
-end
