@@ -86,10 +86,35 @@
       <%= f.input :sku, hint: false, label: false, error: false %>
 
       pH data
-      <%= f.input :ph_data, hint: false, label: false, error: false %>
+      <div class="flex" data-controller="jsonb">
+        <label for="ph_prior">
+          Prior to restoration
+          <input type="text" id="ph_prior" data-jsonb-target="input"/>
+        </label>
+        <label for="ph_post">
+          Post restoration
+          <input type="text" id="ph_post" data-jsonb-target="input"/>
+        </label>
+        <input class="jsonb optional hidden" name="poster[ph_data]" id="poster_ph_data" data-validate="true" data-jsonb-target="result"/>
+      </div>
 
       Dimensions
-      <%= f.input :dimensions, hint: false, label: false, error: false %>
+      <div class="flex" data-controller="jsonb">
+        <label for="height">
+          Height
+          <input type="text" id="height" data-jsonb-target="input"/>
+        </label>
+        <label for="width">
+          Width
+          <input type="text" id="width" data-jsonb-target="input"/>
+        </label>
+
+        <label for="thickness">
+          Thickness
+          <input type="text" id="thickness" data-jsonb-target="input"/>
+        </label>
+        <input class="jsonb optional hidden" name="poster[dimensions]" id="poster_dimensions" data-validate="true" data-jsonb-target="result"/>
+      </div>
 
       Fiber description
       <%= f.input :fiber_description, as: :rich_text_area, placeholder: "Fiber description", hint: false, label: false, error: false %>

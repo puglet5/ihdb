@@ -42,6 +42,7 @@ class Poster < ApplicationRecord
   include ArTransactionChanges
   include Authorship
   include ProcessImage
+  include ParseJson
 
   resourcify
 
@@ -78,4 +79,5 @@ class Poster < ApplicationRecord
   before_save { self.plain_text_notes = notes&.body&.to_plain_text }
 
   after_commit -> { process_image self, thumbnail&.id }, on: %i[create update], unless: -> { transaction_changed_attributes.keys == ['updated_at'] }
+  after_commit -> { parse_json }, on: %i[create update]
 end
