@@ -22,7 +22,6 @@
 #
 FactoryBot.define do
   factory :user do
-    sequence(:id)    { |n| n }
     password         { '123456' }
     first_name       { 'Test' }
     last_name        { 'Test' }
