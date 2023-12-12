@@ -42,6 +42,7 @@
     "postcss-cli": "^11.0.0",
     "postcss-nesting": "^12.0.1",
     "process": "^0.11.10",
+    "stimulus-typescript": "^0.1.3",
     "tailwind-config-viewer": "^1.7.3",
     "typescript": "^5.3.3"
   },
