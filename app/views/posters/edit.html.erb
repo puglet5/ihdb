@@ -1,57 +1,57 @@
 <%= simple_form_for @poster do |f| %>
-  title
+  Title
   <%= f.input :title, placeholder: "Poster title", hint: false, label: false, error: false %>
 
-  description
+  Description
   <%= f.input :description, as: :rich_text_area, placeholder: "Poster description", hint: false, label: false, error: false %>
 
-  performer
+  Performer
   <%= f.input :performer, placeholder: "Performer", hint: false, label: false, error: false %>
 
-  concert
+  Concert
   <%= f.input :concert, placeholder: "Concert", hint: false, label: false, error: false %>
 
-  status
+  Status
   <div>
     <%= f.input :status, default: @poster.status, collection: Poster.statuses.keys.map { |s| [s.humanize, s] }, hint: false, label: false %>
   </div>
 
-  category
+  Category
   <div>
     <%= f.input :category, default: @poster.category, collection: Poster.categories.keys.map { |s| [s.humanize, s] }, hint: false, label: false %>
   </div>
 
-  fiber_type
+  Fiber type
   <div>
     <%= f.input :fiber_type, default: @poster.fiber_type, collection: Poster.fiber_types.keys.map { |s| [s.humanize, s] }, hint: false, label: false %>
   </div>
 
-  collection
+  Collection
   <div>
     <%= f.input :collection, default: @poster.collection, collection: Poster.collections.keys.map { |s| [s.humanize, s] }, hint: false, label: false %>
   </div>
 
-  condition
+  Condition
   <div>
     <%= f.input :condition, default: @poster.condition, collection: Poster.conditions.keys.map { |s| [s.humanize, s] }, hint: false, label: false %>
   </div>
 
-  sku
+  SKU
   <%= f.input :sku, hint: false, label: false, error: false %>
 
-  ph_data
+  pH data
   <%= f.input :ph_data, hint: false, label: false, error: false %>
 
-  dimensions
+  Dimensions
   <%= f.input :dimensions, hint: false, label: false, error: false %>
 
-  fiber_description
+  Fiber description
   <%= f.input :fiber_description, as: :rich_text_area, placeholder: "Fiber description", hint: false, label: false, error: false %>
 
-  condition_description
+  Condition description
   <%= f.input :condition_description, as: :rich_text_area, placeholder: "Condition description", hint: false, label: false, error: false %>
 
-  notes
+  Notes
   <%= f.input :notes, as: :rich_text_area, placeholder: "Poster notes", hint: false, label: false, error: false %>
 
   date
