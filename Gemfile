@@ -78,6 +78,6 @@ end
 group :test do
   gem 'pundit-matchers', '~> 3.1'
   gem 'rails-controller-testing', '~> 1.0'
-  gem 'shoulda-matchers', '~> 5.1'
+  gem 'shoulda-matchers', '~> 6.0'
   gem 'simplecov', '~> 0.22'
 end
