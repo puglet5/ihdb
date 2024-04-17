@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.2.2'
+ruby '3.3.0'
 
 gem 'active_record_extended', '~> 3.0'
 gem 'active_storage-send_zip', '~> 0.3'
@@ -12,7 +12,7 @@ gem 'ar_transaction_changes', '~> 1.1'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'cssbundling-rails', '~> 1.2'
 gem 'devise', '~> 4.8', '>= 4.8.1'
-gem 'dotenv-rails', '~> 2.8'
+gem 'dotenv-rails', '~> 3.1'
 gem 'has_scope', '~> 0.8'
 gem 'image_processing', '~> 1.2'
 gem 'jsbundling-rails', '~> 1.1'
@@ -63,7 +63,7 @@ group :development do
   gem 'annotate', '~> 3.2'
   gem 'bullet', '~> 7.0', '>= 7.0.3'
   gem 'erb_lint', '~> 0.4'
-  gem 'foreman', '~> 0.87.2'
+  gem 'foreman', '~> 0.88'
   gem 'hotwire-livereload', '~> 1.2'
   gem 'htmlbeautifier'
   gem 'immigrant'
