@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.3.0'
+ruby '3.3.3'
 
 gem 'active_record_extended', '~> 3.0'
 gem 'active_storage-send_zip', '~> 0.3'
